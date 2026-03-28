@@ -61,4 +61,33 @@ Resultado indica:<br>
 • Sistema com boa usabilidade<br>
 • Navegação clara e direta<br>
 
-<h3> 📸 Prints do sistema</h3>
+<h3> 📸 Interface do sistema</h3>
+<strong>Página inicial do sistema</strong><br>
+Exibe o catálogo digital com produtos organizados em formato de grade. Possui barra de pesquisa, filtros por categoria e faixa de preço, além de opções de ordenação. Permite ao usuário visualizar rapidamente os itens disponíveis.
+<img width="595" height="489" alt="home" src="https://github.com/user-attachments/assets/e0160adf-a276-49d0-97af-c35d88bb5d85" />
+
+---
+
+<br></br>
+<strong>Gerenciamento de pedidos</strong><br>
+Tela administrativa responsável pelo acompanhamento dos pedidos realizados. Permite visualizar dados do cliente, endereço, status da entrega, observações e atualizar o andamento do pedido.
+
+<img width="595" height="489" alt="pedidos" src="https://github.com/user-attachments/assets/b497254e-b5a4-48b3-843c-d161db6cb270" />
+
+---
+
+<br></br>
+<strong>Cadastro de produtos</strong><br>
+Interface destinada ao cadastro de novos produtos no sistema. Permite adicionar imagens, definir nome, descrição, preço, categoria e status de disponibilidade.
+
+<img width="564" height="542" alt="Add-Produto" src="https://github.com/user-attachments/assets/32c11bb3-172b-404b-a888-71f100448539" />
+
+---
+
+<br></br>
+<strong>Gerenciamento de catálogo</strong><br>
+Tela administrativa para controle dos produtos cadastrados. Permite buscar, filtrar, ordenar, editar, ativar/desativar e remover produtos do catálogo.
+
+<img width="600" height="372" alt="Ger-Catalogo" src="https://github.com/user-attachments/assets/6fe66fd0-8f9b-476b-804a-c63a0a790999" />
+
+
