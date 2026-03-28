@@ -37,12 +37,13 @@ Banco de dados: armazenamento das informações do sistema<br>
 • Next.js<br>
 • React<br>
 • TypeScript<br>
+• JavaScript<br>
 • Bootstrap<br>
 <br>
 <strong>Back-end</strong><br>
 • NestJS<br>
 • TypeORM<br>
-
+<br>
 <strong>Banco de Dados</strong><br>
 • MariaDB<br>
 • TypeORM<br>
