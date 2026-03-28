@@ -1,4 +1,4 @@
-<h3>Solução Digital para Floriculturas</h3>
+<h2>Solução Digital para Floriculturas</h2>
 
 <h3>📌 Descrição</h3>
 
