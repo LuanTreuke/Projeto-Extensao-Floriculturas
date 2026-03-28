@@ -90,4 +90,7 @@ Tela administrativa para controle dos produtos cadastrados. Permite buscar, filt
 
 <img width="600" height="372" alt="Ger-Catalogo" src="https://github.com/user-attachments/assets/6fe66fd0-8f9b-476b-804a-c63a0a790999" />
 
+<h3>👨‍💻 Autor</h3>
+
+<strong>Luan Eduardo Treuke</strong>
 
