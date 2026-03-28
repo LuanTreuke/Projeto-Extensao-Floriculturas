@@ -42,7 +42,8 @@ Banco de dados: armazenamento das informações do sistema<br>
 <br>
 <strong>Back-end</strong><br>
 • NestJS<br>
-• TypeORM<br>
+• TypeScript<br>
+• Python<br>
 <br>
 <strong>Banco de Dados</strong><br>
 • MariaDB<br>
