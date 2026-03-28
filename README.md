@@ -64,6 +64,7 @@ Resultado indica:<br>
 <h3> 📸 Interface do sistema</h3>
 <strong>Página inicial do sistema</strong><br>
 Exibe o catálogo digital com produtos organizados em formato de grade. Possui barra de pesquisa, filtros por categoria e faixa de preço, além de opções de ordenação. Permite ao usuário visualizar rapidamente os itens disponíveis.
+
 <img width="595" height="489" alt="home" src="https://github.com/user-attachments/assets/e0160adf-a276-49d0-97af-c35d88bb5d85" />
 
 ---
