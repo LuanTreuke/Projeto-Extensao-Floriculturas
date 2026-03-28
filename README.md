@@ -1,6 +1,6 @@
 <h3>Solução Digital para Floriculturas</h3>
 
-📌 <h3>Descrição</h3>
+<h3>📌 Descrição</h3>
 
 Este projeto consiste no desenvolvimento de uma solução digital voltada para pequenos empreendimentos, com foco na criação de uma vitrine virtual e no gerenciamento básico de produtos e pedidos.
 
