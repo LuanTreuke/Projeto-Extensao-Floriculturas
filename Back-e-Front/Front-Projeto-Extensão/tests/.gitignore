@@ -1,0 +1,12 @@
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Screenshots e vídeos de testes
+screenshots/
+videos/
+traces/
+
+# Dados de teste
+*.test.data.json

@@ -1,0 +1,25 @@
+.sortGroup {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.button {
+  background: #f3f7f4;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  color: #4b7350;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.selected {
+  background: #cbead6;
+  color: #474747;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+}

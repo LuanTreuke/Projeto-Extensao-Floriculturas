@@ -1,0 +1,42 @@
+.rangeGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: black;
+}
+.sliderWithValues {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+.range {
+  width: 220px;
+}
+.values {
+  font-size: 0.95rem;
+  color: #4b7350;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .rangeGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+  .range {
+    width: 85%;
+  }
+  .values {
+    white-space: normal;
+    margin-left: 0;
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+  }
+}

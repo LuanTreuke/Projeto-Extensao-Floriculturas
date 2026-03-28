@@ -1,0 +1,189 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #2f7a3e;
+}
+
+.instructionsBox {
+  background-color: #f8f9fa;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.instructionsTitle {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #2f7a3e;
+  font-weight: 600;
+}
+
+.stepContainer {
+  margin-bottom: 20px;
+}
+
+.stepRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.stepNumber {
+  background-color: #2f7a3e;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.stepContent h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 4px;
+  color: #333;
+}
+
+.stepContent p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.importantBox {
+  background-color: #fff3cd;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #ffc107;
+  margin-top: 16px;
+}
+
+.importantBox p {
+  margin: 0;
+  font-size: 15px;
+  color: #856404;
+  line-height: 1.5;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  font-size: 18px;
+  padding: 14px 28px;
+  min-width: 200px;
+  background-color: #2f7a3e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.primaryBtn:hover {
+  background-color: #25612f;
+}
+
+.primaryBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.secondaryBtn {
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.secondaryBtn:hover {
+  background-color: #5a6268;
+}
+
+.errorBox {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.successBox {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 16px;
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .instructionsBox {
+    padding: 16px;
+  }
+
+  .instructionsTitle {
+    font-size: 20px;
+  }
+
+  .stepContent h3 {
+    font-size: 16px;
+  }
+
+  .stepContent p {
+    font-size: 15px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    width: 100%;
+  }
+}

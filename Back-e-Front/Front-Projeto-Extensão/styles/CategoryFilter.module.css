@@ -1,0 +1,42 @@
+.filterGroup {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  overflow-x: auto; /* enable horizontal scrolling when items overflow */
+  overflow-y: hidden;
+  flex-wrap: nowrap; /* keep items on a single line */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on mobile */
+  scrollbar-width: none; /* hide scrollbar in Firefox */
+  -ms-overflow-style: none; /* hide scrollbar in IE/Edge */
+}
+.button {
+  background: #f3f7f4;
+  color: #4b7350;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  min-width: fit-content;
+}
+.selected {
+  background: #cbead6;
+  color: #474747;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.selected:hover {
+  cursor: pointer;
+}
+
+/* Hide webkit scrollbar while keeping scrolling functional */
+.filterGroup::-webkit-scrollbar {
+  display: none;
+  height: 0;
+}

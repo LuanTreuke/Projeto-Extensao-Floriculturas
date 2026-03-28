@@ -1,0 +1,375 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 20px;
+    color: #0b0b0b;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #343a40;
+    margin: 0 0 4px 0;
+}
+
+.subtitle {
+    color: #6c757d;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.toolbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap; /* allow toolbar items to wrap to new lines when needed */
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background: #fff;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    flex: 0 1 auto; /* allow filters to shrink when space is limited */
+    min-width: 0; /* enable children to shrink inside flex containers */
+}
+
+.filters select,
+.filters input {
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* hidden by default; shown only on small screens to label the date input */
+.mobileDateLabel {
+    display: none;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+/* hidden by default; shown only on small screens to label the status select */
+.mobileStatusLabel {
+    display: none;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+/* mobile-only label for sort controls */
+.mobileSortLabel {
+    display: none;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.grid {
+    display: grid;
+    gap: 14px;
+}
+
+.card {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(19,19,19,0.03);
+    border: 1px solid rgba(16,16,16,0.04);
+}
+
+/* allow absolutely-positioned elements inside the card (bell icon) */
+.card { position: relative; }
+
+.bellBtn {
+    position: absolute;
+    right: 14px;
+    top: 6px;
+    background: rgba(255,255,255,0.95);
+    border: none;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    color: #333;
+    z-index: 30; /* ensure it sits above the thumb image */
+}
+
+.bellBtn svg { display: block; }
+.bellBtn i { font-size: 18px; line-height: 1; }
+
+.whatsappBtn {
+    position: absolute;
+    left: 14px;
+    top: 6px;
+    background: #25D366;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    color: #fff;
+    z-index: 30;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.whatsappBtn:hover {
+    background: #128C7E;
+    transform: scale(1.05);
+}
+
+.whatsappBtn svg { display: block; }
+
+.rightMeta {
+    /* push the right-side meta lower so bell appears above it on desktop */
+    padding-top: 18px;
+}
+
+.thumb {
+    width: 140px;
+    height: 140px;
+    flex: 0 0 140px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.details {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 95%;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #222;
+    font-size: 0.95rem;
+}
+
+.times {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 6px;
+    color: #444;
+    font-size: 0.92rem;
+}
+
+.productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.badge {
+    background: #f0f6f2;
+    color: #164b2a;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+.statusColumn {
+    max-height: 100px;
+    width: 180px;
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.statusLabel {
+    font-weight: 600;
+    color: #333;
+}
+
+.statusActions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.statusSelect {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+    width: 100%;
+    font-size: 14px;
+}
+
+.statusUpdateBtn {
+    width: 100%;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background: #81c592; /* primary green */
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn.ghost {
+    background: transparent;
+    color: #2f8f46;
+    border: 1px solid rgba(47,143,70,0.12);
+}
+
+.secondaryBtn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .card { flex-direction: column; }
+    .thumb { width: 100%; height: 200px; flex: 0 0 auto; }
+    .statusColumn { width: 100%; flex-direction: row; justify-content: space-between; align-items: center; }
+    .toolbar { align-items: flex-start; }
+
+    /* On smaller screens place the bell over the image with a circular white background */
+    .bellBtn {
+        right: 12px;
+        top: 12px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+        z-index: 60;
+    }
+    
+    /* WhatsApp button on mobile over the image */
+    .whatsappBtn {
+        left: 12px;
+        top: 12px;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+        z-index: 60;
+    }
+    
+    .rightMeta { padding-top: 0; text-align: left; }
+}
+
+/* tighter rules for small phones */
+@media (max-width: 600px) {
+    .container {
+        padding: 12px 12px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .toolbar {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .filters {
+        width: 100%;
+        overflow-x: auto;
+        padding: 6px 8px;
+    }
+
+    .filters > label { display: none; }
+
+    .mobileDateLabel { display: block; margin-bottom: 6px; }
+    .mobileStatusLabel { display: block; margin-bottom: 6px; }
+    .mobileSortLabel { display: block; margin-bottom: 6px; }
+
+    .card {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .thumb { height: 160px; }
+
+    .meta { font-size: 0.9rem; }
+
+    .productList { gap: 6px; }
+
+    .badge { padding: 5px 8px; font-size: 0.8rem; }
+
+    /* allow status column to size to its content on mobile (remove large reserved height) */
+    .statusColumn { width: 100%; margin-top: 6px; flex-direction: column; align-items: flex-start; flex: 0 0 auto; height: auto; }
+
+    .statusActions { 
+        flex-direction: row; 
+        gap: 8px; 
+        width: 100%; 
+        align-items: stretch;
+    }
+    
+    /* no mobile o select ocupa ~70% da largura disponível */
+    .statusSelect { 
+        flex: 0 0 70%;
+        max-width: 70%;
+        min-width: 0;
+    }
+    
+    /* botão fica com o restante da largura, sem espremê-lo */
+    .statusUpdateBtn { 
+        flex: 1; 
+        width: auto; 
+        padding: 8px 16px; 
+    }
+
+    .statusLabel { margin-bottom: 4px; }
+
+    .btn, .secondaryBtn {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .secondaryBtn { margin-top: 6px; }
+
+}
+
+    @media (max-width: 600px) {
+        .container { max-width: none; margin: 0; padding-left: 10px; padding-right: 10px; }
+    }

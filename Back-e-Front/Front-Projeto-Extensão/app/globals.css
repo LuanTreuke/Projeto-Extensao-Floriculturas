@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+/* Bootstrap Icons CDN (used in various pages) */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;         
+    padding: 16px 12px 0 12px; 
+    margin: 0 auto;
+  }
+
+  .productsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .productsGrid > * {
+    min-width: 0;
+  }
+}
+
+:root {
+  /* Light mode defaults: white background, dark text */
+  --background: #ffffff;
+  --foreground: #111111; /* texto escuro por padrão */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Dark mode: dark background, light text */
+    --background: #f0f0f0;
+    --foreground: #ffffff;
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Forçar cores em todos os navegadores (especialmente Safari/WebKit) */
+a, a:link, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+/* Remover estilos padrão do Safari em inputs e botões */
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+}
+
+/* Prevenir auto-zoom no Safari iOS em inputs */
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}

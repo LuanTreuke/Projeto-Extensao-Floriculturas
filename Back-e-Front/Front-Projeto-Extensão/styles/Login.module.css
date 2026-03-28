@@ -1,0 +1,90 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f7f4;
+}
+.form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 340px;
+  max-width: 480px;
+}
+.form h2 {
+  margin-bottom: 8px;
+  color: #4b7350;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.logoWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+.logo {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.form input {
+  padding: 10px 12px;
+  border: 1px solid #cbead6;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.form input:focus {
+  border: 1.5px solid #4b7350;
+}
+.form button {
+  background: #cbead6;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.form button:hover {
+  background: #b2e0c2;
+}
+.error {
+  color: #c0392b;
+  font-size: 0.95rem;
+  text-align: center;
+}
+.success {
+  color: #4b7350;
+  font-size: 0.95rem;
+  text-align: center;
+}
+.link {
+  color: #4b7350;
+  font-size: 1.1rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    width: 300px;
+    height: auto;
+  }
+  .container {
+    padding: 16px;
+  }
+}

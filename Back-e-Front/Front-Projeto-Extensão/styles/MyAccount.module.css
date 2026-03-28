@@ -1,0 +1,66 @@
+.container {
+  padding: 24px;
+  max-width: 880px;
+  margin: 24px auto;
+}
+
+.section {
+  border: 1px solid #e6e6e6;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background: #fff;
+}
+
+.list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px; 
+}
+.item { 
+  display: flex; 
+  align-items: center; 
+  gap: 8px; 
+}
+.value { 
+  flex: 1; 
+}
+.actions { 
+  display: flex; 
+  gap: 8px; 
+}q
+.input { 
+  padding: 8px; 
+  border: 1px solid #ddd; 
+  border-radius: 6px; 
+}
+
+.editBtn, .deleteBtn, .saveBtn, .cancelBtn, .addBtn { 
+  padding: 6px 8px; 
+  border: none; 
+  border-radius: 6px; 
+  cursor: pointer; 
+}
+.editBtn { 
+  background: #f0f0f0; 
+}
+.deleteBtn { 
+  background: #ffe6e6; 
+  font-weight: 700; /* make X bold */
+  padding: 6px 12px; /* increase horizontal size */
+  min-width: 40px;
+}
+.saveBtn { 
+  background: #e6ffee; 
+}
+.cancelBtn { 
+  background: #f4f4f4; 
+}
+.addRow { 
+  display: flex; 
+  gap: 8px; 
+  margin-top: 12px; 
+}
+.addBtn { 
+  background: #e3f5e7; 
+}
